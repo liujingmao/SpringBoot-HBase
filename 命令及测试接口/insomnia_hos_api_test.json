@@ -1,0 +1,829 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-04-04T02:43:33.958Z",
+	"__export_source": "insomnia.desktop.app:v4.2.14",
+	"resources": [
+		{
+			"_id": "wrk_39fde879a13c4a6ba8857369a08fdcc1",
+			"parentId": null,
+			"modified": 1521182937105,
+			"created": 1521182937105,
+			"name": "imooc",
+			"description": "",
+			"certificates": [],
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_9fd226392b664840a25eb40c18231ae6",
+			"parentId": "wrk_39fde879a13c4a6ba8857369a08fdcc1",
+			"modified": 1521184781509,
+			"created": 1521184781509,
+			"name": "Base Environment",
+			"data": {},
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_bd9a81aadc8d4b0fabeff39c89e95ddc",
+			"parentId": "wrk_39fde879a13c4a6ba8857369a08fdcc1",
+			"modified": 1521884833048,
+			"created": 1521184781392,
+			"name": "Default Jar",
+			"cookies": [
+				{
+					"creation": "2018-03-24T09:24:30.959Z",
+					"key": "JSESSIONID",
+					"value": "144ms8t8vjah5yzyyp4u1z4gq",
+					"path": "/",
+					"expires": "2018-03-24T10:17:13.000Z",
+					"hostOnly": true,
+					"domain": "127.0.0.1",
+					"lastAccessed": "2018-03-24T09:47:13.045Z"
+				}
+			],
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_b302d291f7bb458091a109236e2c1e11",
+			"parentId": "wrk_39fde879a13c4a6ba8857369a08fdcc1",
+			"modified": 1521182974721,
+			"created": 1521182974721,
+			"name": "HosService",
+			"environment": {},
+			"metaSortKey": -1521182974721,
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_5ec3a3b0292843de93d5cdf7802902d7",
+			"parentId": "fld_b302d291f7bb458091a109236e2c1e11",
+			"modified": 1521186856893,
+			"created": 1521182992944,
+			"name": "user",
+			"environment": {},
+			"metaSortKey": -1521182992944,
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_9e13fc76546e4fa294a394407475d1fc",
+			"parentId": "fld_b302d291f7bb458091a109236e2c1e11",
+			"modified": 1521183021840,
+			"created": 1521183021840,
+			"name": "hosstore",
+			"environment": {},
+			"metaSortKey": -1521183021840,
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_8d5d9e0f03c548dea1acb0d9e055b793",
+			"parentId": "fld_b302d291f7bb458091a109236e2c1e11",
+			"modified": 1521186872534,
+			"created": 1521186872534,
+			"name": "auth",
+			"environment": {},
+			"metaSortKey": -1521186872534,
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_418b01901abb4e8b905641e3c905339d",
+			"parentId": "fld_b302d291f7bb458091a109236e2c1e11",
+			"modified": 1521188343405,
+			"created": 1521188343405,
+			"name": "bucket",
+			"environment": {},
+			"metaSortKey": -1521188343405,
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_182f49662a2c42a490b998d6eb538a2d",
+			"parentId": "fld_5ec3a3b0292843de93d5cdf7802902d7",
+			"modified": 1521884898372,
+			"created": 1521183032722,
+			"url": "127.0.0.1:9080/loginPost",
+			"name": "登录",
+			"method": "GET",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "username",
+						"value": "Jerry"
+					},
+					{
+						"name": "password",
+						"value": "123456"
+					},
+					{
+						"name": "",
+						"value": ""
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1521183032722,
+			"_type": "request"
+		},
+		{
+			"_id": "req_411c146471ad4efcadee931531c9febd",
+			"parentId": "fld_5ec3a3b0292843de93d5cdf7802902d7",
+			"modified": 1521883518903,
+			"created": 1521183043047,
+			"url": "127.0.0.1:9080/hos/v1/sys/user",
+			"name": "添加用户",
+			"method": "POST",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "userName",
+						"value": "Jerry"
+					},
+					{
+						"name": "password",
+						"value": "123456"
+					},
+					{
+						"name": "role",
+						"value": "USER"
+					},
+					{
+						"name": "detail",
+						"value": "a test user for hos"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1521183043047,
+			"_type": "request"
+		},
+		{
+			"_id": "req_54c324a411fe4f94ad0decaf04889f26",
+			"parentId": "fld_5ec3a3b0292843de93d5cdf7802902d7",
+			"modified": 1521186680030,
+			"created": 1521183052455,
+			"url": "127.0.0.1:9080/hos/v1/sys/user",
+			"name": "删除用户",
+			"method": "DELETE",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "userId",
+						"value": "5d52088732ae4fa3aa6a5c0e16b98ce2"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1521183052455,
+			"_type": "request"
+		},
+		{
+			"_id": "req_7298232c13e046569281648dbde03d66",
+			"parentId": "fld_5ec3a3b0292843de93d5cdf7802902d7",
+			"modified": 1521185785642,
+			"created": 1521183099567,
+			"url": "127.0.0.1:9080/hos/v1/sys/user",
+			"name": "查询个人信息",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1521183099567,
+			"_type": "request"
+		},
+		{
+			"_id": "req_da5ca832cbf142939c1833b7d56a9d8c",
+			"parentId": "fld_5ec3a3b0292843de93d5cdf7802902d7",
+			"modified": 1521186097731,
+			"created": 1521183110991,
+			"url": "127.0.0.1:9080/hos/v1/sys/user",
+			"name": "修改个人信息",
+			"method": "PUT",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "password",
+						"value": "654321"
+					},
+					{
+						"name": "detail",
+						"value": "test update user info"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1521183110991,
+			"_type": "request"
+		},
+		{
+			"_id": "req_ee7486057c1b4816800be3d1c40aa9de",
+			"parentId": "fld_5ec3a3b0292843de93d5cdf7802902d7",
+			"modified": 1521186002684,
+			"created": 1521185987067,
+			"url": "127.0.0.1:9080/logout",
+			"name": "登出",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1521185987067,
+			"_type": "request"
+		},
+		{
+			"_id": "req_5a0f2518654f455887ad6e85422d0bf2",
+			"parentId": "fld_9e13fc76546e4fa294a394407475d1fc",
+			"modified": 1521885207169,
+			"created": 1521189845089,
+			"url": "127.0.0.1:9080/hos/v1/object",
+			"name": "上传文件",
+			"method": "POST",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "bucket",
+						"value": "jerrybucket"
+					},
+					{
+						"name": "key",
+						"value": "/dir1/dir2/file3.jpg"
+					},
+					{
+						"name": "mediaType",
+						"value": "jpg",
+						"disabled": false
+					},
+					{
+						"name": "content",
+						"value": "",
+						"type": "file",
+						"fileName": "/home/jixin/桌面/empty_avatar.jpg",
+						"disabled": false
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1521189845089,
+			"_type": "request"
+		},
+		{
+			"_id": "req_cb1ce5167a9e404e9643a03feb0e951c",
+			"parentId": "fld_9e13fc76546e4fa294a394407475d1fc",
+			"modified": 1521885296746,
+			"created": 1521189854200,
+			"url": "127.0.0.1:9080/hos/v1/object",
+			"name": "删除文件",
+			"method": "DELETE",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "bucket",
+						"value": "jerrybucket"
+					},
+					{
+						"name": "key",
+						"value": "/dir1/dir2/file1.jpg"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1521189854200,
+			"_type": "request"
+		},
+		{
+			"_id": "req_a0cbc0a20c6949b2942336129dcf9e86",
+			"parentId": "fld_9e13fc76546e4fa294a394407475d1fc",
+			"modified": 1521885267191,
+			"created": 1521189894264,
+			"url": "127.0.0.1:9080/hos/v1/object/list/dir",
+			"name": "列出目录下文件",
+			"method": "GET",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "bucket",
+						"value": "jerrybucket"
+					},
+					{
+						"name": "dir",
+						"value": "/dir1/dir2/"
+					},
+					{
+						"name": "startKey",
+						"value": "",
+						"disabled": true
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1521189894264,
+			"_type": "request"
+		},
+		{
+			"_id": "req_a0f24461d85f4c78ab7b5603eb6667b6",
+			"parentId": "fld_9e13fc76546e4fa294a394407475d1fc",
+			"modified": 1521195969251,
+			"created": 1521189910288,
+			"url": "127.0.0.1:9080/hos/v1/object/list/prefix",
+			"name": "按前缀检索",
+			"method": "GET",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "bucket",
+						"value": "test1"
+					},
+					{
+						"name": "dir",
+						"value": "/dir1/dir2/"
+					},
+					{
+						"name": "prefix",
+						"value": "d"
+					},
+					{
+						"name": "startKey",
+						"value": "",
+						"disabled": true
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1521189910288,
+			"_type": "request"
+		},
+		{
+			"_id": "req_020e3d47e32241c19b4177cd856f5f72",
+			"parentId": "fld_9e13fc76546e4fa294a394407475d1fc",
+			"modified": 1521885457797,
+			"created": 1521190661878,
+			"url": "127.0.0.1:9080/hos/v1/object/list",
+			"name": "按起止文件名检索",
+			"method": "GET",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "bucket",
+						"value": "jerrybucket"
+					},
+					{
+						"name": "startKey",
+						"value": "/dir1/dir2/file3.jpg"
+					},
+					{
+						"name": "endKey",
+						"value": "/dir1/dir3/"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1521190661878,
+			"_type": "request"
+		},
+		{
+			"_id": "req_7ea6c7cc3dc146959b573ac13b1037f7",
+			"parentId": "fld_9e13fc76546e4fa294a394407475d1fc",
+			"modified": 1521885338704,
+			"created": 1521190801094,
+			"url": "127.0.0.1:9080/hos/v1/object/info",
+			"name": "获取文件详情",
+			"method": "GET",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "bucket",
+						"value": "jerrybucket"
+					},
+					{
+						"name": "key",
+						"value": "/dir1/dir2/file2.jpg"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1521190801094,
+			"_type": "request"
+		},
+		{
+			"_id": "req_ad5579d099aa43189bbacc9252c3071c",
+			"parentId": "fld_9e13fc76546e4fa294a394407475d1fc",
+			"modified": 1521885487064,
+			"created": 1521190807381,
+			"url": "127.0.0.1:9080/hos/v1/object/content",
+			"name": "下载文件",
+			"method": "GET",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "bucket",
+						"value": "jerrybucket"
+					},
+					{
+						"name": "key",
+						"value": "/dir1/dir2/file2.jpg"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1521190807381,
+			"_type": "request"
+		},
+		{
+			"_id": "req_071143b648064441b5037ac449f58862",
+			"parentId": "fld_8d5d9e0f03c548dea1acb0d9e055b793",
+			"modified": 1521884944791,
+			"created": 1521186883911,
+			"url": "127.0.0.1:9080/hos/v1/sys/token",
+			"name": "添加token",
+			"method": "POST",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "expireTime",
+						"value": "7",
+						"disabled": false
+					},
+					{
+						"name": "isActive",
+						"value": "",
+						"disabled": true
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1521186883911,
+			"_type": "request"
+		},
+		{
+			"_id": "req_0b6b4e8aea26483a9ede7fe2937c57c8",
+			"parentId": "fld_8d5d9e0f03c548dea1acb0d9e055b793",
+			"modified": 1521885015120,
+			"created": 1521186891933,
+			"url": "127.0.0.1:9080/hos/v1/sys/token",
+			"name": "删除token",
+			"method": "DELETE",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "token",
+						"value": "1cc02f518b094b17b99f35502744e099"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1521186891933,
+			"_type": "request"
+		},
+		{
+			"_id": "req_16eed579aac14dadafd971c7da126bbb",
+			"parentId": "fld_8d5d9e0f03c548dea1acb0d9e055b793",
+			"modified": 1521188247692,
+			"created": 1521186902645,
+			"url": "127.0.0.1:9080/hos/v1/sys/token",
+			"name": "更新token信息",
+			"method": "PUT",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "token",
+						"value": "7c12631cecf14855bbc460dfcf05e545"
+					},
+					{
+						"name": "expireTime",
+						"value": "11"
+					},
+					{
+						"name": "isActive",
+						"value": "false"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1521186902645,
+			"_type": "request"
+		},
+		{
+			"_id": "req_f95bcf8587a54556b1a5b69f494d7fca",
+			"parentId": "fld_8d5d9e0f03c548dea1acb0d9e055b793",
+			"modified": 1521885050589,
+			"created": 1521186910637,
+			"url": "127.0.0.1:9080/hos/v1/sys/token/refresh",
+			"name": "刷新token",
+			"method": "POST",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "token",
+						"value": "a0acf1b4dcc744568ac5881970e8e5f8"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1521186910637,
+			"_type": "request"
+		},
+		{
+			"_id": "req_2b054a8d5c6444fdb8caabe565354d49",
+			"parentId": "fld_8d5d9e0f03c548dea1acb0d9e055b793",
+			"modified": 1521187940724,
+			"created": 1521186921341,
+			"url": "127.0.0.1:9080/hos/v1/sys/token/list",
+			"name": "查看token列表",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1521186921341,
+			"_type": "request"
+		},
+		{
+			"_id": "req_f369a0a8346140068f77f6733172a87b",
+			"parentId": "fld_8d5d9e0f03c548dea1acb0d9e055b793",
+			"modified": 1521188151192,
+			"created": 1521187952677,
+			"url": "127.0.0.1:9080/hos/v1/sys/token",
+			"name": "查看token详情",
+			"method": "GET",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "token",
+						"value": "2dd9179cf9304c16bab6896507e10889"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1521187952677,
+			"_type": "request"
+		},
+		{
+			"_id": "req_b37486aa2acc4f82b19c4a02773f82b2",
+			"parentId": "fld_418b01901abb4e8b905641e3c905339d",
+			"modified": 1521885090101,
+			"created": 1521188355460,
+			"url": "127.0.0.1:9080/hos/v1/bucket",
+			"name": "创建bucket",
+			"method": "POST",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "bucket",
+						"value": "jerrybucket"
+					},
+					{
+						"name": "detail",
+						"value": "this is a test bucket"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1521188355460,
+			"_type": "request"
+		},
+		{
+			"_id": "req_d1126069cff1439ba92e8406f2e33608",
+			"parentId": "fld_418b01901abb4e8b905641e3c905339d",
+			"modified": 1521189766875,
+			"created": 1521188363923,
+			"url": "127.0.0.1:9080/hos/v1/bucket",
+			"name": "删除bucket",
+			"method": "DELETE",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "bucket",
+						"value": ""
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1521188363923,
+			"_type": "request"
+		},
+		{
+			"_id": "req_30aaa10763a648fc970021265accbd06",
+			"parentId": "fld_418b01901abb4e8b905641e3c905339d",
+			"modified": 1521885121673,
+			"created": 1521188372603,
+			"url": "127.0.0.1:9080/hos/v1/bucket",
+			"name": "获取bucket详情",
+			"method": "GET",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "bucket",
+						"value": "jerrybucket"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1521188372603,
+			"_type": "request"
+		},
+		{
+			"_id": "req_b584777c336840d6b18ffc14662dc4b6",
+			"parentId": "fld_418b01901abb4e8b905641e3c905339d",
+			"modified": 1521189832351,
+			"created": 1521188379763,
+			"url": "127.0.0.1:9080/hos/v1/bucket/list",
+			"name": "获取bucket列表",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1521188379763,
+			"_type": "request"
+		},
+		{
+			"_id": "req_4f3a0a591f3541f696171113bb4c1620",
+			"parentId": "fld_418b01901abb4e8b905641e3c905339d",
+			"modified": 1521193833372,
+			"created": 1521188386946,
+			"url": "127.0.0.1:9080/hos/v1/bucket",
+			"name": "更新bucket详情",
+			"method": "PUT",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "bucket",
+						"value": "test2"
+					},
+					{
+						"name": "detail",
+						"value": "sdfsadfdsafsa"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1521188386946,
+			"_type": "request"
+		}
+	]
+}

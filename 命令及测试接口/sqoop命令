@@ -1,0 +1,18 @@
+# sqoop 帮助
+./sqoop help
+# sqoop import命令帮助
+./sqoop import --help
+# sqoop 列出database；
+./sqoop list-databases --connect jdbc:mysql://127.0.0.1/ --username root -P
+# sqoop 测试链接查询数据
+./sqoop eval --connect jdbc:mysql://127.0.0.1/dianping --username root --password 123456 --query "select SHOP_NAME,STAR from SHOP limit 10"
+# sqoop导入数据到hdfs
+./sqoop import --connect jdbc:mysql://127.0.0.1/dianping --username root -P  --table SHOP --target-dir /dianping.shop --num-mappers 1
+
+# sqoop导出hdfs数据到数据库
+./sqoop export --connect jdbc:mysql://127.0.0.1:3306/dbTest --username root -P --table testTable --export-dir /dianping.shop --num-mappers 1
+
+# Sqoop导入数据到hbase
+./sqoop import --connect jdbc:mysql://127.0.0.1/dianping --username root -P  --query "select URL_CODE,SHOP_NAME,STAR,CREATE_TIME from SHOP WHERE 1=1 and \$CONDITIONS" --hbase-table dianping --hbase-create-table --hbase-row-key URL_CODE --split-by CREATE_TIME --column-family cf
+
+# sqoop导出hbase数据到数据库
